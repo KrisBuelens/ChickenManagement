@@ -39,7 +39,7 @@ table 50133 "Egg Production Line"
         {
             DataClassification = ToBeClassified;
         }
-        field(50007; "Chicken Type Code"; Code[10]
+        field(50007; "Chicken Type Code"; Code[10])
         {
             DataClassification = ToBeClassified;
         }

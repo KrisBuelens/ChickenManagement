@@ -1,54 +1,58 @@
-<<<<<<< HEAD
-table 50133 "Egg Production Line"
+table 50507 "Chicken Ledger Entry"
 {
     DataClassification = ToBeClassified;
 
     fields
     {
-
-        field(50000; "Document No."; Code[20])
-        {
-            DataClassification = ToBeClassified;
-
-
-        }
-        field(50001; "Document Line No."; Integer)
-        {
-            DataClassification = ToBeClassified;
-
-
-        }
-        field(50002; "Chicken No."; Code[20])
-        {
-            DataClassification = ToBeClassified;
-            TableRelation = "Chicken"."Code";
-        }
-        field(50003; "Chicken Description"; Text[80])
+        field(50000; "Entry No."; Integer)
         {
             DataClassification = ToBeClassified;
         }
-        field(50004; "Egg Date"; Date)
+        field(50011; "Chicken No."; Code[20])
         {
             DataClassification = ToBeClassified;
         }
-        field(50005; "Egg Type Code"; Code[10])
+        field(50012; "Posting Date"; Date)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50013; "Entry Type"; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = "Positive Adjmt.","Negative Adjmt.";
+        }
+        field(50014; "Document No."; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50015; "Document Line No."; integer)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50016; "Description"; Text[50])
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(50017; Quantity; decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50018; "Egg Type Code"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+            //TableRelation = "Egg Type"."Code";
+        }
+        field(50019; "Chicken Type Code"; Code[10])
         {
             DataClassification = ToBeClassified;
             TableRelation = "Chicken Type Code"."Code";
-        }
-        field(50006; "Quantity"; Decimal)
-        {
-            DataClassification = ToBeClassified;
-        }
-        field(50007; "Chicken Type Code"; Code[10])
-        {
-            DataClassification = ToBeClassified;
         }
     }
 
     keys
     {
-        key(PK; "Document No.", "Document Line No.")
+        key(PK; "Entry No.")
         {
             Clustered = true;
         }
@@ -78,5 +82,3 @@ table 50133 "Egg Production Line"
     end;
 
 }
-=======
->>>>>>> 8b32e9eaf25a2eb0979ccd1168ce70bc82794010

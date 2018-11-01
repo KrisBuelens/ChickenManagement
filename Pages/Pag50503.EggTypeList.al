@@ -3,7 +3,8 @@ page 50503 "EggTypeList"
     PageType = List;
     UsageCategory = Lists;
     ApplicationArea = All;
-    SourceTable = "Chicken Egg Type";
+    SourceTable = "Egg Type Code";
+    CardPageId = ChickenCard;
 
     layout
     {
@@ -11,7 +12,14 @@ page 50503 "EggTypeList"
         {
             repeater(Group)
             {
+                field(Code; Code)
+                {
 
+                }
+                field(Description; Description)
+                {
+
+                }
             }
         }
         area(Factboxes)

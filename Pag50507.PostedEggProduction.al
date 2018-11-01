@@ -1,22 +1,21 @@
-page 50504 "Egg Production"
+page 50507 "Posted Egg Production"
 {
-    PageType = Card;
+    PageType = Document;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "Egg Production Header";
+    SourceTable = 50505;
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            group(General)
             {
                 field("No."; "No.")
                 {
                     ApplicationArea = All;
 
                 }
-
                 field("Document Date"; "Document Date")
                 {
                     ApplicationArea = All;

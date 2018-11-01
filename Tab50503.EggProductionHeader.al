@@ -1,4 +1,4 @@
-table 50132 "Egg Production Header"
+table 50503 "Egg Production Header"
 {
     DataClassification = ToBeClassified;
 

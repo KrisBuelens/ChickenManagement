@@ -1,4 +1,4 @@
-page 50500 ChickenCard
+page 50500 "ChickenCard"
 {
     PageType = Card;
     ApplicationArea = All;

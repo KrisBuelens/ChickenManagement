@@ -1,4 +1,4 @@
-table 50133 "Egg Production Line"
+table 50504 "Egg Production Line"
 {
     DataClassification = ToBeClassified;
 
@@ -13,26 +13,32 @@ table 50133 "Egg Production Line"
             DataClassification = ToBeClassified;
             TableRelation = "Chicken"."Code";
         }
-        field(50002; "Chicken Description"; Text[80])
+        field(50002; "Chicken No."; Integer)
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "Chicken"."Code";
+        }
+        field(50003; "Chicken Description"; Text[80])
         {
             DataClassification = ToBeClassified;
         }
-        field(50003; "Egg Date"; Date)
+        field(50004; "Egg Date"; Date)
         {
             DataClassification = ToBeClassified;
         }
-        field(50004; "Egg Type Code"; Code[10])
+        field(50005; "Egg Type Code"; Code[10])
+        {
+            DataClassification = ToBeClassified;
+            TableRelation = "Egg Type Code"."Code";
+        }
+        field(50006; "Quantity"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50007; "Chicken Type Code"; Code[10])
         {
             DataClassification = ToBeClassified;
             TableRelation = "Chicken Type Code"."Code";
-        }
-        field(50005; "Quantity"; Decimal)
-        {
-            DataClassification = ToBeClassified;
-        }
-        field(50006; "Chicken Type Code"; Code[10])
-        {
-            DataClassification = ToBeClassified;
         }
     }
 

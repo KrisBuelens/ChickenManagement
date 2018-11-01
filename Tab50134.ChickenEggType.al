@@ -1,10 +1,15 @@
-table 50134 "Chicken Egg Type"
+table 50502 "Egg Type Code"
 {
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; MyField; Integer)
+        field(50000; Code; Code[20])
+        {
+            DataClassification = ToBeClassified;
+
+        }
+        field(50001; Description; Text[80])
         {
             DataClassification = ToBeClassified;
 
@@ -13,7 +18,7 @@ table 50134 "Chicken Egg Type"
 
     keys
     {
-        key(PK; MyField)
+        key(PK; Code)
         {
             Clustered = true;
         }

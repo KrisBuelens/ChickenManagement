@@ -1,4 +1,4 @@
-table 50106 "Posted Egg Production Line"
+table 50506 "Posted Egg Production Line"
 {
     DataClassification = ToBeClassified;
 

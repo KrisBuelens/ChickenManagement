@@ -1,29 +1,34 @@
-table 50130 Chicken
+table 50132 "Egg Production Header"
 {
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(50000; Code; Code[20])
+        field(50000; "No."; Code[20])
         {
             DataClassification = ToBeClassified;
 
         }
-        field(50001; Description; Text[80])
+        field(50001; "Document Date"; Date)
         {
             DataClassification = ToBeClassified;
 
         }
-        field(50002; "Chicken Type Code"; Code[10])
+        field(50002; "Posting Date"; Date)
         {
             DataClassification = ToBeClassified;
-            TableRelation = "Chicken Type Code"."Code";
+
+        }
+        field(50003; "No. Printed"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+
         }
     }
 
     keys
     {
-        key(PK; Code)
+        key(PK; "No.")
         {
             Clustered = true;
         }

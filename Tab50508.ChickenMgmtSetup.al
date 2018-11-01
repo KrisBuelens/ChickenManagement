@@ -1,4 +1,4 @@
-table 50508 ChickenMgmtSetup
+table 50508 "ChickenMgmtSetup"
 {
     DataClassification = CustomerContent;
 

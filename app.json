@@ -1,6 +1,6 @@
 {
-  "id": "b87bd176-5162-43d9-b57a-ebf4c1d026c8",
-  "name": "Chicken",
+  "id": "6a9174f4-0509-4161-82f7-5f0d88e609ee",
+  "name": "Chicken Management",
   "publisher": "Default publisher",
   "brief": "",
   "description": "",
@@ -17,7 +17,7 @@
   "application": "13.0.0.0",
   "idRange": {
     "from": 50100,
-    "to": 50149
+    "to": 50600
   },
   "runtime": "2.0"
 }
